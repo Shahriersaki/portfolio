@@ -1,0 +1,591 @@
+PORTFOLIO DOCUMENTATION SAMPLE
+
+Hotel Schema MakerUser Guide
+
+Generate hotel JSON-LD schema and XML sitemaps from crawled website pages
+
+Document Field
+
+Details
+
+Product
+
+Hotel Schema Maker
+
+Document type
+
+End-user guide / product documentation sample
+
+Audience
+
+Hotel marketers, SEO specialists, content teams, and technical SEO reviewers
+
+Prepared for portfolio
+
+Md. Shahrier Hasan Saki
+
+Primary workflow
+
+Create project -> crawl pages -> enrich data -> generate schema -> export JSON-LD -> generate XML sitemap
+
+Live demo
+
+hotel-schema-maker.onrender.com
+
+Repository
+
+github.com/Shahriersaki/hotel-schema-maker
+
+Portfolio note
+
+This guide is written as a user-facing documentation sample. It demonstrates the ability to translate a technical SEO product into clear instructions for non-developer users while still preserving enough technical detail for SEO and engineering reviewers.
+
+1. Overview
+
+Hotel Schema Maker is an SEO automation tool designed to help hotel teams generate structured data and XML sitemaps more efficiently. Instead of manually writing JSON-LD for every hotel page, users can create a project, crawl a hotel website, review detected pages, generate schema, apply corrections, and export implementation-ready markup.
+
+The tool is especially useful for hotel SEO workflows where teams need consistent structured data across home pages, room pages, dining pages, gallery pages, local attraction pages, policy pages, contact pages, and other hospitality-related page types.
+
+What users can do with the tool
+
+Create and manage schema projects for multiple hotel properties.
+
+Crawl a hotel website to discover important pages automatically.
+
+Generate JSON-LD structured data for hotel-specific page types.
+
+Use configuration modes to follow trends, internal feed rules, or both.
+
+Review generated schema before copying, exporting, or publishing it.
+
+Generate XML Sitemap 0.9 output for discovered hotel pages.
+
+Use feed and trend systems to keep schema rules aligned with current requirements.
+
+Fix validation issues through guided correction workflows.
+
+Who this guide is for
+
+User type
+
+How they use the guide
+
+Hotel marketer
+
+Generate hotel schema and sitemap files without writing code manually.
+
+SEO specialist
+
+Review detected pages, choose schema modes, validate schema, and prepare implementation assets.
+
+Content or website manager
+
+Understand what hotel information is needed before schema generation.
+
+Developer or technical reviewer
+
+Understand how exported JSON-LD and XML sitemap output should be implemented.
+
+2. Before You Start
+
+Prepare the basic hotel information before creating a project. This reduces missing fields and improves the quality of the generated schema.
+
+Required item
+
+Example
+
+Hotel website URL
+
+https://examplehotel.com/
+
+Hotel name
+
+Grand Hotel Vienna
+
+Address
+
+Street address, city, state/region, postal code, country code
+
+Contact details
+
+Phone number and reservation email
+
+Hotel description
+
+Short factual description of the hotel, location, and selling points
+
+Operational details
+
+Check-in time, check-out time, price range, amenities, ratings if available
+
+Pages to include
+
+Home, rooms, dining, attractions, gallery, contact, policies, offers, events
+
+Privacy and security reminder
+
+Do not paste passwords, API keys, database tokens, private customer information, or internal notes into public screenshots or portfolio material. Use environment variables for secrets and blur sensitive dashboard details before publishing screenshots.
+
+3. Quick Workflow
+
+The standard Hotel Schema Maker workflow follows four main product stages: crawl the website, enrich the data, generate JSON-LD schema, and generate an XML sitemap.
+
+[Insert screenshot: Project pipeline showing Crawl Website -> Enrich Data -> Generate Schema -> XML Sitemap]
+
+1. Sign in — Access the Hotel Schema Maker dashboard with your user account.
+
+2. Create a new project — Enter the hotel name, website URL, address, contact details, and other required hotel information.
+
+3. Run crawl — Let the tool discover pages from the hotel website.
+
+4. Review discovered pages — Confirm which pages should be included and adjust page types if needed.
+
+5. Choose schema mode — Select whether the schema should follow trends, internal feed rules, or both.
+
+6. Enrich data — Fill missing information from manual input, crawled content, and online sources.
+
+7. Generate schema — Create JSON-LD structured data for the selected pages.
+
+8. Review and fix output — Check generated fields, correct missing values, and rewrite invalid schema where necessary.
+
+9. Export schema — Copy, download, or export implementation-ready JSON-LD.
+
+10. Generate XML sitemap — Create the XML sitemap output for the discovered hotel pages.
+
+11. Validate before publishing — Test structured data and sitemap output using the appropriate validation tools before implementation.
+
+4. Sign In and Open the Dashboard
+
+Start by signing in to Hotel Schema Maker. After login, the dashboard shows available projects, folders, search tools, and quick access to recent hotel projects.
+
+[Insert screenshot: Sign-in screen with private email/password blurred]
+
+[Insert screenshot: Dashboard view with project card and sidebar]
+
+Dashboard areas
+
+Area
+
+Purpose
+
+Dashboard
+
+View existing hotel schema projects and open recent work.
+
+New Project
+
+Create a new hotel schema project.
+
+Feed System
+
+Upload or manage organizational schema guidelines, examples, and validation feedback.
+
+Trend Checker
+
+Review schema.org and Google structured-data trend information.
+
+Manager Panel
+
+Manage admin-level settings, users, or role-based access where available.
+
+5. Create a New Hotel Project
+
+A project stores all schema and sitemap work for one hotel website. Create a new project when working on a new property or when separating one hotel from another client/property set.
+
+[Insert screenshot: New Project form showing project, hotel identity, address, and contact sections]
+
+Steps
+
+1. Open New Project — Click New Project from the dashboard or sidebar.
+
+2. Enter project details — Add the project name and hotel website URL.
+
+3. Complete hotel identity — Enter the hotel name, star rating if available, and a factual description.
+
+4. Add address information — Enter street address, city, region, postal code, and country code.
+
+5. Add contact and policy information — Enter phone, email, check-in/check-out times, and price range where available.
+
+6. Save the project — Save the project before running the crawl or generation pipeline.
+
+Writing tip for hotel descriptions
+
+Use factual, concise, location-aware copy. Avoid exaggerated claims, unsupported ranking language, or promises the hotel cannot verify. Good schema data starts with accurate source content.
+
+6. Crawl the Hotel Website
+
+The crawler discovers pages from the hotel website and prepares them for schema generation. This helps reduce manual URL collection and gives the SEO team a structured list of pages to review.
+
+[Insert screenshot: Crawl Website step showing pages found]
+
+How to run a crawl
+
+1. Open the project — Select the hotel project from the dashboard.
+
+2. Click Run Crawl — The tool scans the website and discovers available pages.
+
+3. Review pages found — Check the page count and confirm that important pages were discovered.
+
+4. Add missing pages manually — If a key page is not found, use Add Page to include it manually.
+
+Page type
+
+Example page
+
+Home
+
+/
+
+Rooms
+
+/rooms/ or /rooms-suites/
+
+Dining
+
+/dining/ or /restaurant/
+
+Gallery
+
+/gallery/
+
+Attractions
+
+/local-attractions/
+
+Contact
+
+/contact/
+
+Policies
+
+/policies/
+
+Offers or events
+
+/offers/ or /events/
+
+7. Review Pages and Select Schema Modes
+
+After crawling, review the discovered pages before generating schema. Each page can have a detected page type and a schema mode. The mode controls which rule source the generator follows.
+
+[Insert screenshot: Pages Discovered list with page type and schema mode dropdowns]
+
+Schema mode options
+
+Mode
+
+Use when
+
+What it does
+
+Follow Both
+
+You want the safest balance between general trends and internal guidelines.
+
+Reconciles output with both current trend rules and internal knowledge-base/feed rules.
+
+Follow Trends
+
+You want to prioritize external schema.org and Google structured-data trend alignment.
+
+Applies required and deprecated property checks based on the latest trend snapshots.
+
+Follow Fed
+
+You want the output to follow your uploaded internal feed or knowledge-base rules.
+
+Applies rules from the uploaded feed and bypasses wider trend alignment.
+
+Recommended default
+
+Use Follow Both for most production hotel pages. Use Follow Trends when testing against external structured-data updates, and Follow Fed when an organization has strict internal schema rules.
+
+8. Enrich Hotel Data
+
+The enrichment step fills or strengthens schema fields using available sources such as manual input, crawled content, geocoding data, and online information. Always review enriched data before publishing.
+
+[Insert screenshot: Generated Fields & Data Origin panel showing property values and source labels]
+
+Field type
+
+Why it matters
+
+Address
+
+Needed for accurate Hotel and LocalBusiness-style structured data.
+
+Geo coordinates
+
+Helps describe the hotel location more precisely.
+
+Amenity features
+
+Supports hotel selling points such as Wi-Fi, parking, breakfast, pool, spa, or pet-friendly policies.
+
+Images and alt text
+
+Improves schema completeness where image fields are supported.
+
+Page URL and page type
+
+Connects the right schema output to the correct website page.
+
+9. Generate JSON-LD Schema
+
+After reviewing pages and enrichment data, generate the schema output. The tool creates JSON-LD markup for the selected hotel pages and displays the output in a copyable format.
+
+[Insert screenshot: Generated Schemas panel showing JSON-LD output and Copy/Export buttons]
+
+Steps
+
+1. Select pages — Choose the pages that should receive schema output.
+
+2. Confirm page types — Check that each page is mapped to the correct schema type or combination.
+
+3. Click Generate — Generate JSON-LD for the selected pages.
+
+4. Review output — Check key fields such as @type, name, URL, address, geo, image, description, and amenities.
+
+5. Copy or export — Use Copy JSON, Copy HTML, Export, or Copy All depending on the implementation workflow.
+
+Implementation note
+
+For website implementation, JSON-LD is usually placed inside a <script type="application/ld+json"> block. The final placement should be handled by the website developer, CMS manager, or SEO implementation workflow.
+
+10. Fix and Rewrite Schema Issues
+
+If a validator reports an issue, use the correction workflow to guide schema updates. This is useful when required properties are missing, deprecated fields appear, or a property needs a more accurate value.
+
+[Insert screenshot: Schema Corrections panel showing resolved/fixed items]
+
+Correction workflow
+
+1. Paste the issue — Enter the validation error or missing-field note into the correction field.
+
+2. Click Fix & Rewrite — Let the correction engine regenerate the affected part of the schema.
+
+3. Review the changed output — Confirm that the fix did not add inaccurate or unsupported information.
+
+4. Revalidate — Run the updated schema through a validation tool before publishing.
+
+11. Generate the XML Sitemap
+
+The XML sitemap generator creates sitemap output from the selected or discovered hotel pages. This can help SEO teams review crawlable URLs and prepare a sitemap file for website implementation.
+
+[Insert screenshot: XML Sitemap output with Copy XML and Download buttons]
+
+Steps
+
+1. Open the project pipeline — Go to the XML Sitemap step in the selected hotel project.
+
+2. Click Generate — Generate the sitemap output from the discovered pages.
+
+3. Review URLs — Confirm that the important public pages are included and irrelevant/private pages are excluded.
+
+4. Copy or download XML — Use Copy XML or Download to prepare the sitemap for implementation.
+
+5. Submit or update sitemap — After implementation, submit or inspect the sitemap through the appropriate search engine tools.
+
+12. Use the Feed System and Trend Checker
+
+The Feed System and Trend Checker help keep schema generation consistent. They are intended for advanced users who manage internal schema rules, reference examples, validator feedback, or structured-data trend changes.
+
+[Insert screenshot: Feed System page with validator output, reference schema, and latest news fields]
+
+[Insert screenshot: Trend Checker page showing required/recommended properties and fetch history]
+
+Feature
+
+Purpose
+
+Best use
+
+Feed System
+
+Stores internal rules, examples, validator errors, corrections, and notes.
+
+Use when the organization wants repeatable schema standards across properties.
+
+Trend Checker
+
+Tracks structured-data guidance and property changes from schema and search-related sources.
+
+Use when validating whether current schema output follows newer recommendations.
+
+Knowledge Base
+
+Shows saved entries, guidelines, reference schemas, validator errors, and notes.
+
+Use as a reference layer before regenerating schema.
+
+Fetch History
+
+Shows past trend fetches and indexed structured-data references.
+
+Use for audit history and update review.
+
+13. Export, Validate, and Publish
+
+Before adding schema or sitemap output to a live hotel website, validate the generated files and confirm that all business information is accurate. Schema should describe the real page content and the actual hotel, not invented or unsupported claims.
+
+Output
+
+What to check before publishing
+
+JSON-LD schema
+
+@type, hotel name, URL, address, geo, images, amenities, description, and page-specific fields.
+
+HTML script block
+
+Correct <script type="application/ld+json"> wrapper and clean JSON formatting.
+
+XML sitemap
+
+Correct URLs, no private/admin pages, proper lastmod values, and correct sitemap formatting.
+
+Validation results
+
+No critical errors; warnings reviewed and documented when optional.
+
+Screenshots for portfolio
+
+Blur private emails, account details, login fields, tokens, client notes, and internal data.
+
+14. Troubleshooting
+
+Problem
+
+Likely reason
+
+What to do
+
+Crawler finds too few pages
+
+The site blocks crawling, navigation is script-heavy, or important URLs are not linked.
+
+Add missing pages manually and confirm the website URL is correct.
+
+Wrong page type detected
+
+The page content or URL pattern is ambiguous.
+
+Use the page type dropdown to override the detected type.
+
+Missing hotel details
+
+Some fields were not provided during project setup or were not found during crawling.
+
+Open the project settings and add missing address, contact, amenity, or description details.
+
+Validator shows missing optional fields
+
+Some recommended properties are not available from the source content.
+
+Add only accurate information. Do not invent optional values.
+
+Schema contains outdated properties
+
+The output may need trend or feed updates.
+
+Refresh trends, check the feed rules, then regenerate schema.
+
+Sitemap includes unwanted URLs
+
+The crawler included low-value, duplicate, or non-public pages.
+
+Deselect those pages before regenerating the sitemap.
+
+Exported code is hard to read
+
+The output is minified or copied into the wrong editor.
+
+Use the Export or Copy JSON option and format the code in a JSON editor if needed.
+
+15. Best Practices
+
+Keep schema factual. Structured data should match visible page content wherever possible.
+
+Use one clear page purpose per URL before generating schema.
+
+Review all generated fields before publishing, especially address, geo, image, rating, amenities, and price-related fields.
+
+Do not add fake ratings, unsupported reviews, invented amenities, or inaccurate business information.
+
+Keep internal feed rules clean and documented so future generations remain consistent.
+
+Validate schema after major website content changes.
+
+Regenerate the sitemap when important hotel pages are added, removed, or redirected.
+
+Store screenshots and exports in a clean project folder for audit and reporting.
+
+16. Frequently Asked Questions
+
+Is Hotel Schema Maker only for hotels?
+
+The current workflow is designed around hotel and hospitality websites. It is most useful for hotel pages such as home, rooms, dining, local attractions, gallery, contact, policies, offers, and events.
+
+Do I need coding knowledge to use the tool?
+
+Basic SEO or website knowledge is helpful, but the product is designed to reduce manual coding. A developer or CMS manager may still be needed to publish the final JSON-LD on the live website.
+
+Can I edit generated schema?
+
+Yes. Review the output, add missing accurate information, and use the correction workflow when validator issues appear.
+
+What is the safest schema mode?
+
+Follow Both is the safest default because it considers both external trend alignment and internal feed rules.
+
+Can I generate schema for multiple pages at once?
+
+Yes. The project workflow supports multiple discovered pages and can generate structured data across selected page types.
+
+Should I publish every discovered page in the sitemap?
+
+No. Review the page list first. Exclude duplicate, irrelevant, private, or low-value pages before generating the final sitemap.
+
+What should I do after exporting schema?
+
+Validate the JSON-LD, confirm the content is accurate, then pass the implementation-ready code to the website developer or CMS manager.
+
+17. Portfolio Presentation Note
+
+When adding this guide to a portfolio, present it as a technical content and product documentation sample for a self-built SEO automation product.
+
+Portfolio field
+
+Suggested entry
+
+Sample title
+
+Hotel Schema Maker User Guide
+
+Content type
+
+Technical documentation / user guide
+
+Product type
+
+SEO automation tool for hotels
+
+Skills demonstrated
+
+Technical writing, user education, SEO knowledge, product documentation, workflow explanation, structured-data understanding
+
+Recommended screenshots
+
+Dashboard, project pipeline, generated schema, XML sitemap, feed system, trend checker, new project form
+
+Privacy note
+
+Use redacted screenshots only. Do not show credentials, account emails, DB connection strings, tokens, or private client data.
+
+Appendix: Technical Summary for Reviewers
+
+The user guide is intentionally written for end users. For technical reviewers, the product can be summarized as a Flask-based Python web application with HTML/CSS/JavaScript templates, SQLite/libSQL database support, JWT authentication, role-based access control, BFS crawling, schema generation, trend/feed systems, correction workflows, XML sitemap generation, and Render deployment.
+
+Security note
+
+This appendix intentionally excludes database URLs, tokens, JWT secrets, and private environment details. Public portfolio documentation should never expose production configuration values.

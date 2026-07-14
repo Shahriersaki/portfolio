@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --color-teal-50: #e1f5ee;
+  --color-teal-100: #b7e6d6;
+  --color-teal-300: #7fd4b8;
+  --color-teal-400: #5dcaa5;
+  --color-teal-500: #1d9e75;
+  --color-teal-600: #0f6e56;
+  --color-teal-800: #085041;
+  --color-teal-900: #04342c;
+
+  --color-ink-950: #0b0d0c;
+  --color-ink-900: #121512;
+  --color-ink-800: #181b18;
+  --color-ink-700: #22261f;
+  --color-ink-500: #565c53;
+  --color-ink-300: #9ca39d;
+  --color-ink-100: #d8ddd4;
+  --color-ink-50: #f4f4ef;
+
+  --animate-fade-up: fade-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+:root {
+  --bg-0: var(--color-ink-50);
+  --bg-1: #ffffff;
+  --bg-2: var(--color-ink-50);
+  --text-primary: var(--color-ink-950);
+  --text-secondary: var(--color-ink-500);
+  --text-muted: #8a8f85;
+  --border-hairline: rgba(11, 13, 12, 0.1);
+  --border-strong: rgba(11, 13, 12, 0.18);
+  --accent: var(--color-teal-600);
+  --accent-text: var(--color-teal-600);
+  --accent-bg: var(--color-teal-50);
+}
+
+[data-theme="dark"] {
+  --bg-0: var(--color-ink-950);
+  --bg-1: var(--color-ink-900);
+  --bg-2: var(--color-ink-800);
+  --text-primary: var(--color-ink-50);
+  --text-secondary: var(--color-ink-300);
+  --text-muted: #6b726c;
+  --border-hairline: rgba(244, 244, 239, 0.09);
+  --border-strong: rgba(244, 244, 239, 0.16);
+  --accent: var(--color-teal-400);
+  --accent-text: var(--color-teal-400);
+  --accent-bg: rgba(29, 158, 117, 0.14);
+}
+
+* {
+  border-color: var(--border-hairline);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-0);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  background: var(--accent-bg);
+  color: var(--accent-text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Blog content styling */
+.blog-content {
+  line-height: 1.75;
+}
+.blog-content h2 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+.blog-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+}
+.blog-content p {
+  margin-bottom: 1.25rem;
+  color: var(--text-secondary);
+}
+.blog-content ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+}
+.blog-content li {
+  margin-bottom: 0.5rem;
+}
+.blog-content blockquote {
+  border-left: 4px solid var(--accent);
+  padding-left: 1.25rem;
+  font-style: italic;
+  margin: 1.5rem 0;
+  color: var(--text-secondary);
+  background: var(--bg-2);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.blog-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.875rem;
+}
+.blog-content th, .blog-content td {
+  border: 1px solid var(--border-hairline);
+  padding: 0.75rem;
+  text-align: left;
+}
+.blog-content th {
+  background: var(--bg-2);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+.blog-content pre {
+  background: var(--bg-2);
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  margin: 1.5rem 0;
+  border: 1px solid var(--border-hairline);
+}
+.blog-content code {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  background: var(--bg-2);
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  color: var(--accent-text);
+}
+.blog-content a {
+  color: var(--accent-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.blog-content a:hover {
+  color: var(--text-primary);
+}
+

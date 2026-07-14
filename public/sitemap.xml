@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://shahriersaki.dev/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://shahriersaki.dev/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://shahriersaki.dev/services</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://shahriersaki.dev/case-studies</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://shahriersaki.dev/case-studies/boutique-hotel-spa</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://shahriersaki.dev/case-studies/napa-valley-luxury-resort</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://shahriersaki.dev/case-studies/lakeside-historic-inn</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://shahriersaki.dev/case-studies/almadina-real-estate</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://shahriersaki.dev/skills</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://shahriersaki.dev/experience</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shahriersaki.dev/projects</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://shahriersaki.dev/projects/hotel-schema-maker</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://shahriersaki.dev/projects/mood-music-sqa</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://shahriersaki.dev/projects/hotel-sqa-automation</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://shahriersaki.dev/projects/ecommerce-checkout-test</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://shahriersaki.dev/projects/selenium-login-test</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://shahriersaki.dev/blog</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shahriersaki.dev/labs</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://shahriersaki.dev/github</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://shahriersaki.dev/contact</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+</urlset>
