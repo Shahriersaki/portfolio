@@ -1,3 +1,5 @@
+import { assetUrl } from "@/lib/assets";
+
 export interface CaseStudy {
   slug: string;
   client: string;
@@ -42,8 +44,8 @@ export const caseStudies: CaseStudy[] = [
       { metric: "Growth Period", value: "3 months", detail: "Consistent upward trend" },
     ],
     skills: ["Technical SEO", "Hotel SEO", "Content Strategy", "Schema Markup", "GA4", "Google Search Console"],
-    screenshot: "/images/hotel-perla-gsc.png",
-    extraScreenshot: "/images/hotel-perla-comparison.png",
+    screenshot: assetUrl("/images/hotel-perla-gsc.png"),
+    extraScreenshot: assetUrl("/images/hotel-perla-comparison.png"),
   },
   {
     slug: "napa-valley-luxury-resort",
@@ -72,7 +74,7 @@ export const caseStudies: CaseStudy[] = [
       { metric: "napa hotels with spa", value: "41 → 16", detail: "↑25 positions — 720 monthly searches" },
     ],
     skills: ["Keyword Research", "On-page SEO", "Technical SEO", "Content Strategy", "Competitor Analysis", "Local SEO"],
-    screenshot: "/images/senza-rankings.png",
+    screenshot: assetUrl("/images/senza-rankings.png"),
   },
   {
     slug: "lakeside-historic-inn",
@@ -100,8 +102,8 @@ export const caseStudies: CaseStudy[] = [
       { metric: "Avg Position", value: "8.7", detail: "Solid top-of-page-1 presence" },
     ],
     skills: ["Hotel SEO", "Technical SEO", "Content Strategy", "Google Search Console", "CTR Optimization"],
-    screenshot: "/images/dune-gsc-2.png",
-    extraScreenshot: "/images/dune-gsc-1.png",
+    screenshot: assetUrl("/images/dune-gsc-2.png"),
+    extraScreenshot: assetUrl("/images/dune-gsc-1.png"),
   },
   {
     slug: "almadina-real-estate",
@@ -131,6 +133,6 @@ export const caseStudies: CaseStudy[] = [
       { metric: "Engagement", value: "600+", detail: "Messaging conversations generated" },
     ],
     skills: ["Facebook Ads", "Lead Generation", "Campaign Management", "Ad Copywriting", "Video Marketing", "Python Automation"],
-    screenshot: "/images/fb-ads-almadina.png",
+    screenshot: assetUrl("/images/fb-ads-almadina.png"),
   },
 ];

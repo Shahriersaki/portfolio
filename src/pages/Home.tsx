@@ -7,6 +7,7 @@ import { profile } from "@/data/profile";
 import { caseStudies } from "@/data/casestudies";
 import { useSEO } from "@/lib/useSEO";
 import { Testimonials } from "@/components/sections/Testimonials";
+import { assetUrl } from "@/lib/assets";
 
 const STATS = [
   { value: "1.54M", label: "Organic impressions managed", sub: "Boutique Hotel & Spa — 3 months" },
@@ -160,7 +161,7 @@ export default function Home() {
               <div className="relative mx-auto max-w-[260px] lg:max-w-none">
                 <div className="absolute -inset-3 rounded-2xl opacity-20 blur-xl" style={{ background: "var(--accent)" }} aria-hidden="true" />
                 <img
-                  src="/images/profile.png"
+                  src={assetUrl('/images/profile.png')}
                   alt="Md. Shahrier Hasan Saki"
                   className="relative w-full rounded-2xl border border-[var(--border-hairline)] object-cover aspect-square shadow-2xl"
                   width={260}
@@ -271,7 +272,7 @@ export default function Home() {
                 >
                   <div className="relative overflow-hidden">
                     <img
-                      src={cs.screenshot}
+                      src={assetUrl(cs.screenshot)}
                       alt={`${cs.client} results`}
                       className="w-full h-48 object-cover object-top transition group-hover:scale-105 duration-500"
                       loading="lazy"

@@ -5,6 +5,7 @@ import { Container, SectionHeading } from "@/components/ui/Container";
 import { Tag } from "@/components/ui/Tag";
 import { caseStudies } from "@/data/casestudies";
 import { useSEO } from "@/lib/useSEO";
+import { assetUrl } from "@/lib/assets";
 
 export default function CaseStudies() {
   useSEO({
@@ -101,7 +102,7 @@ export default function CaseStudies() {
         >
           <div className="relative overflow-hidden h-56 lg:h-auto">
             <img
-              src="/images/ecom-ads.png"
+              src={assetUrl('/images/ecom-ads.png')}
               alt="E-commerce Toy Shop Facebook Ads results"
               className="w-full h-full object-cover object-top"
               loading="lazy"

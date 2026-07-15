@@ -5,6 +5,8 @@ import { profile } from "@/data/profile";
 import { education } from "@/data/experience";
 import { useSEO } from "@/lib/useSEO";
 
+import { assetUrl } from "@/lib/assets";
+
 const LANGUAGES = [
   { lang: "English", level: "Advanced / Professional" },
   { lang: "Bengali", level: "Native" },
@@ -25,7 +27,7 @@ export default function About() {
           <div className="relative">
             <div className="absolute -inset-3 rounded-2xl opacity-25 blur-xl" style={{ background: "var(--accent)" }} aria-hidden="true" />
             <img
-              src="/images/profile.png"
+              src={assetUrl('/images/profile.png')}
               alt={profile.name}
               className="relative w-full max-w-[300px] rounded-2xl border border-[var(--border-hairline)] object-cover aspect-square"
               loading="lazy"

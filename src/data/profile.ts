@@ -1,3 +1,5 @@
+import { assetUrl } from "@/lib/assets";
+
 export const profile = {
   name: "Md. Shahrier Hasan Saki",
   role: "Data-Driven SEO Expert & Digital Marketer",
@@ -13,7 +15,7 @@ export const profile = {
     leetcode: "https://leetcode.com/u/tlIY7zMbuS/",
     hackerrank: "https://www.hackerrank.com/profile/shahrierseopro",
   },
-  resumeUrl: "/resume/Shahrier-Hasan-Saki-Resume.pdf",
+  resumeUrl: assetUrl("/resume/Shahrier-Hasan-Saki-Resume.pdf"),
 };
 
 export interface SkillGroup {

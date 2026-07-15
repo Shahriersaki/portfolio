@@ -89,8 +89,8 @@ export const blogPosts: BlogPost[] = [
 <p>Privacy and security reminder</p>
 <p>Do not paste passwords, API keys, database tokens, private customer information, or internal notes into public screenshots or portfolio material. Use environment variables for secrets and blur sensitive dashboard details before publishing screenshots.</p>
 <h2>3. Quick Workflow</h2>
-<p>The standard Hotel Schema Maker workflow follows four main product stages: crawl the website, enrich the data, generate JSON-LD schema, and generate an XML sitemap.</p>
-<p><strong>[Insert screenshot:</strong>  Project pipeline showing Crawl Website -> Enrich Data -> Generate Schema -> XML Sitemap]</p>
+<p><p>The standard Hotel Schema Maker workflow follows four main product stages: crawl the website, enrich the data, generate JSON-LD schema, and generate an XML sitemap.</p>
+<img src="/images/schema-maker-project.png" alt="Hotel Schema Maker Pipeline" class="my-6 rounded-xl border border-[var(--border-hairline)] w-full shadow-md" />
 <h2>1. Sign in — Access the Hotel Schema Maker dashboard with your user account.</h2>
 <h2>2. Create a new project — Enter the hotel name, website URL, address, contact details, and other required hotel information.</h2>
 <h2>3. Run crawl — Let the tool discover pages from the hotel website.</h2>
@@ -104,8 +104,8 @@ export const blogPosts: BlogPost[] = [
 <h2>11. Validate before publishing — Test structured data and sitemap output using the appropriate validation tools before implementation.</h2>
 <h2>4. Sign In and Open the Dashboard</h2>
 <p>Start by signing in to Hotel Schema Maker. After login, the dashboard shows available projects, folders, search tools, and quick access to recent hotel projects.</p>
-<p><strong>[Insert screenshot:</strong>  Sign-in screen with private email/password blurred]</p>
-<p><strong>[Insert screenshot:</strong>  Dashboard view with project card and sidebar]</p>
+<img src="/images/schema-maker-signin.png" alt="Hotel Schema Maker Sign In Screen" class="my-6 rounded-xl border border-[var(--border-hairline)] w-full max-w-lg mx-auto shadow-md" />
+<img src="/images/schema-maker-dashboard.png" alt="Hotel Schema Maker Dashboard" class="my-6 rounded-xl border border-[var(--border-hairline)] w-full shadow-md" />
 <p>Dashboard areas</p>
 <p>Area</p>
 <p>Purpose</p>
@@ -121,8 +121,6 @@ export const blogPosts: BlogPost[] = [
 <p>Manage admin-level settings, users, or role-based access where available.</p>
 <h2>5. Create a New Hotel Project</h2>
 <p>A project stores all schema and sitemap work for one hotel website. Create a new project when working on a new property or when separating one hotel from another client/property set.</p>
-<p><strong>[Insert screenshot:</strong>  New Project form showing project, hotel identity, address, and contact sections]</p>
-<p>Steps</p>
 <h2>1. Open New Project — Click New Project from the dashboard or sidebar.</h2>
 <h2>2. Enter project details — Add the project name and hotel website URL.</h2>
 <h2>3. Complete hotel identity — Enter the hotel name, star rating if available, and a factual description.</h2>
@@ -133,7 +131,7 @@ export const blogPosts: BlogPost[] = [
 <p>Use factual, concise, location-aware copy. Avoid exaggerated claims, unsupported ranking language, or promises the hotel cannot verify. Good schema data starts with accurate source content.</p>
 <h2>6. Crawl the Hotel Website</h2>
 <p>The crawler discovers pages from the hotel website and prepares them for schema generation. This helps reduce manual URL collection and gives the SEO team a structured list of pages to review.</p>
-<p><strong>[Insert screenshot:</strong>  Crawl Website step showing pages found]</p>
+<img src="/images/schema-maker-project.png" alt="Discovered Pages" class="my-6 rounded-xl border border-[var(--border-hairline)] w-full shadow-md" />
 <p>How to run a crawl</p>
 <h2>1. Open the project — Select the hotel project from the dashboard.</h2>
 <h2>2. Click Run Crawl — The tool scans the website and discovers available pages.</h2>
@@ -159,7 +157,7 @@ export const blogPosts: BlogPost[] = [
 <p>/offers/ or /events/</p>
 <h2>7. Review Pages and Select Schema Modes</h2>
 <p>After crawling, review the discovered pages before generating schema. Each page can have a detected page type and a schema mode. The mode controls which rule source the generator follows.</p>
-<p><strong>[Insert screenshot:</strong>  Pages Discovered list with page type and schema mode dropdowns]</p>
+<img src="/images/schema-maker-project.png" alt="Discovered Pages List" class="my-6 rounded-xl border border-[var(--border-hairline)] w-full shadow-md" />
 <p>Schema mode options</p>
 <p>Mode</p>
 <p>Use when</p>
@@ -177,7 +175,7 @@ export const blogPosts: BlogPost[] = [
 <p>Use Follow Both for most production hotel pages. Use Follow Trends when testing against external structured-data updates, and Follow Fed when an organization has strict internal schema rules.</p>
 <h2>8. Enrich Hotel Data</h2>
 <p>The enrichment step fills or strengthens schema fields using available sources such as manual input, crawled content, geocoding data, and online information. Always review enriched data before publishing.</p>
-<p><strong>[Insert screenshot:</strong>  Generated Fields & Data Origin panel showing property values and source labels]</p>
+<img src="/images/schema-maker-enrich.png" alt="Data Enrichment & Origin" class="my-6 rounded-xl border border-[var(--border-hairline)] w-full shadow-md" />
 <p>Field type</p>
 <p>Why it matters</p>
 <p>Address</p>
@@ -192,7 +190,7 @@ export const blogPosts: BlogPost[] = [
 <p>Connects the right schema output to the correct website page.</p>
 <h2>9. Generate JSON-LD Schema</h2>
 <p>After reviewing pages and enrichment data, generate the schema output. The tool creates JSON-LD markup for the selected hotel pages and displays the output in a copyable format.</p>
-<p><strong>[Insert screenshot:</strong>  Generated Schemas panel showing JSON-LD output and Copy/Export buttons]</p>
+<img src="/images/schema-maker-generated.png" alt="Generated JSON-LD Schema" class="my-6 rounded-xl border border-[var(--border-hairline)] w-full shadow-md" />
 <p>Steps</p>
 <h2>1. Select pages — Choose the pages that should receive schema output.</h2>
 <h2>2. Confirm page types — Check that each page is mapped to the correct schema type or combination.</h2>
@@ -203,7 +201,7 @@ export const blogPosts: BlogPost[] = [
 <p>For website implementation, JSON-LD is usually placed inside a <script type="application/ld+json"> block. The final placement should be handled by the website developer, CMS manager, or SEO implementation workflow.</p>
 <h2>10. Fix and Rewrite Schema Issues</h2>
 <p>If a validator reports an issue, use the correction workflow to guide schema updates. This is useful when required properties are missing, deprecated fields appear, or a property needs a more accurate value.</p>
-<p><strong>[Insert screenshot:</strong>  Schema Corrections panel showing resolved/fixed items]</p>
+<img src="/images/schema-maker-sitemap.png" alt="Schema Validation & Corrections" class="my-6 rounded-xl border border-[var(--border-hairline)] w-full shadow-md" />
 <p>Correction workflow</p>
 <h2>1. Paste the issue — Enter the validation error or missing-field note into the correction field.</h2>
 <h2>2. Click Fix & Rewrite — Let the correction engine regenerate the affected part of the schema.</h2>
@@ -211,7 +209,7 @@ export const blogPosts: BlogPost[] = [
 <h2>4. Revalidate — Run the updated schema through a validation tool before publishing.</h2>
 <h2>11. Generate the XML Sitemap</h2>
 <p>The XML sitemap generator creates sitemap output from the selected or discovered hotel pages. This can help SEO teams review crawlable URLs and prepare a sitemap file for website implementation.</p>
-<p><strong>[Insert screenshot:</strong>  XML Sitemap output with Copy XML and Download buttons]</p>
+<img src="/images/schema-maker-sitemap.png" alt="XML Sitemap Output" class="my-6 rounded-xl border border-[var(--border-hairline)] w-full shadow-md" />
 <p>Steps</p>
 <h2>1. Open the project pipeline — Go to the XML Sitemap step in the selected hotel project.</h2>
 <h2>2. Click Generate — Generate the sitemap output from the discovered pages.</h2>
@@ -220,8 +218,8 @@ export const blogPosts: BlogPost[] = [
 <h2>5. Submit or update sitemap — After implementation, submit or inspect the sitemap through the appropriate search engine tools.</h2>
 <h2>12. Use the Feed System and Trend Checker</h2>
 <p>The Feed System and Trend Checker help keep schema generation consistent. They are intended for advanced users who manage internal schema rules, reference examples, validator feedback, or structured-data trend changes.</p>
-<p><strong>[Insert screenshot:</strong>  Feed System page with validator output, reference schema, and latest news fields]</p>
-<p><strong>[Insert screenshot:</strong>  Trend Checker page showing required/recommended properties and fetch history]</p>
+<img src="/images/schema-maker-feed.png" alt="Feed System Manager" class="my-6 rounded-xl border border-[var(--border-hairline)] w-full shadow-md" />
+<img src="/images/schema-maker-trends.png" alt="Trend Checker Dashboard" class="my-6 rounded-xl border border-[var(--border-hairline)] w-full shadow-md" />
 <p>Feature</p>
 <p>Purpose</p>
 <p>Best use</p>

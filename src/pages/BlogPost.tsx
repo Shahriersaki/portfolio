@@ -57,7 +57,9 @@ export default function BlogPost() {
 
         <div 
           className="blog-content mt-10"
-          dangerouslySetInnerHTML={{ __html: post.content }}
+          dangerouslySetInnerHTML={{ 
+            __html: post.content.replace(/src="\/images\//g, `src="${import.meta.env.BASE_URL}images/`)
+          }}
         />
       </article>
     </Container>
